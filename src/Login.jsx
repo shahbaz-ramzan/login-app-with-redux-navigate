@@ -7,7 +7,7 @@ import { login } from "./Redux/Slice";
 
 export default function Login() {
   const navigate = useNavigate();
-  const dispatch=useDispatch();
+  const dispatch = useDispatch();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   // const status=false;
@@ -16,7 +16,7 @@ export default function Login() {
     console.log("value ", value);
 
     // localStorage.setItem("status", true);
-    dispatch(login())
+    dispatch(login());
     navigate("/dashboard");
   };
 

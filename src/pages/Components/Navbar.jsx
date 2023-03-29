@@ -1,14 +1,14 @@
 import React from "react";
 import "./Style.css";
 import { Link } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { logout } from "../../Redux/Slice";
 
 function Navbar() {
-const dispatch=useDispatch()
+  const dispatch = useDispatch();
   const handleLogout = () => {
     // localStorage.setItem("status", "");
-    dispatch(logout())
+    dispatch(logout());
   };
   return (
     <div className="Navbar">

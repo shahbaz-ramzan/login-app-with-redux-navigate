@@ -1,23 +1,23 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState={
-   status:''
-}
+const initialState = {
+  status: "",
+};
 
-export const Slice=createSlice({
-    name:'logged',
-    initialState,
+export const Slice = createSlice({
+  name: "logged",
+  initialState,
 
-    reducers:{
-        login:(state)=>{
-            state.status=true
-        },
-        logout:(state)=>{
-            state.status=false
-        },
+  reducers: {
+    login: (state) => {
+      state.status = true;
     },
-})
+    logout: (state) => {
+      state.status = false;
+    },
+  },
+});
 
-export const {login,logout}=Slice.actions
+export const { login, logout } = Slice.actions;
 
-export default Slice.reducer
+export default Slice.reducer;
